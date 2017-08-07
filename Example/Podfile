@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WTModule_Example' do
+  pod 'WTModule', :path => '../'
+
+  target 'WTModule_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
