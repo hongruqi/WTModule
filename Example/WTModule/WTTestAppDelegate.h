@@ -7,9 +7,10 @@
 //
 
 @import UIKit;
+#import "WTAppDelegate.h"
 
-@interface WTAppDelegate : UIResponder <UIApplicationDelegate>
+@interface WTTestAppDelegate : WTAppDelegate
 
-@property (strong, nonatomic) UIWindow *window;
+//@property (strong, nonatomic) UIWindow *window;
 
 @end

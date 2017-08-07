@@ -13,7 +13,7 @@
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* WTAppDelegate.m */; };
+		6003F59E195388D20070C39A /* WTTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* WTTestAppDelegate.m */; };
 		6003F5A7195388D20070C39A /* WTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* WTViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
@@ -23,6 +23,9 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		8C1B5B671F38916700EFDC6A /* WTAXXModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B5B661F38916700EFDC6A /* WTAXXModule.m */; };
+		8C1B5B6A1F38929200EFDC6A /* WTBXXModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B5B691F38929200EFDC6A /* WTBXXModule.m */; };
+		8C1B5B6F1F38A15600EFDC6A /* WTBXXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1B5B6E1F38A15600EFDC6A /* WTBXXViewController.m */; };
 		AEB24E4EEA0FBCC95072041E /* Pods_WTModule_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C203010079C7A5AB07ADF124 /* Pods_WTModule_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		1349C64C51C0F35B1FCB2F22 /* Pods_WTModule_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTModule_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25DCCCEB6F3AC85705333FEF /* WTModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WTModule.podspec; path = ../WTModule.podspec; sourceTree = "<group>"; };
+		25DCCCEB6F3AC85705333FEF /* WTModule.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WTModule.podspec; path = ../WTModule.podspec; sourceTree = "<group>"; };
 		27B2CF370D4580BF433E09BC /* Pods-WTModule_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTModule_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTModule_Tests/Pods-WTModule_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		477032ABC3CF8350BB3AC542 /* Pods-WTModule_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTModule_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WTModule_Example/Pods-WTModule_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WTModule_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTModule_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,8 +52,8 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* WTModule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WTModule-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* WTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* WTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* WTTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTTestAppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* WTTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTTestAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A5195388D20070C39A /* WTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* WTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -61,11 +64,17 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		85A25B26CF179FCA2FAFE322 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		85A25B26CF179FCA2FAFE322 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8C1B5B651F38916700EFDC6A /* WTAXXModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAXXModule.h; sourceTree = "<group>"; };
+		8C1B5B661F38916700EFDC6A /* WTAXXModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAXXModule.m; sourceTree = "<group>"; };
+		8C1B5B681F38929200EFDC6A /* WTBXXModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBXXModule.h; sourceTree = "<group>"; };
+		8C1B5B691F38929200EFDC6A /* WTBXXModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBXXModule.m; sourceTree = "<group>"; };
+		8C1B5B6D1F38A15600EFDC6A /* WTBXXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTBXXViewController.h; sourceTree = "<group>"; };
+		8C1B5B6E1F38A15600EFDC6A /* WTBXXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTBXXViewController.m; sourceTree = "<group>"; };
 		97496A92C1CE95E19DE85623 /* Pods-WTModule_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTModule_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTModule_Example/Pods-WTModule_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C203010079C7A5AB07ADF124 /* Pods_WTModule_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTModule_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C80B6E0726C46C75A6986F3F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C80B6E0726C46C75A6986F3F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E3D8F8B52AB9E47F34720D79 /* Pods-WTModule_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTModule_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WTModule_Tests/Pods-WTModule_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -132,8 +141,10 @@
 		6003F593195388D20070C39A /* Example for WTModule */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* WTAppDelegate.h */,
-				6003F59D195388D20070C39A /* WTAppDelegate.m */,
+				8C1B5B641F38914F00EFDC6A /* BXXModule */,
+				8C1B5B631F38913700EFDC6A /* AXXModule */,
+				6003F59C195388D20070C39A /* WTTestAppDelegate.h */,
+				6003F59D195388D20070C39A /* WTTestAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* WTViewController.h */,
 				6003F5A6195388D20070C39A /* WTViewController.m */,
@@ -183,6 +194,26 @@
 				85A25B26CF179FCA2FAFE322 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		8C1B5B631F38913700EFDC6A /* AXXModule */ = {
+			isa = PBXGroup;
+			children = (
+				8C1B5B651F38916700EFDC6A /* WTAXXModule.h */,
+				8C1B5B661F38916700EFDC6A /* WTAXXModule.m */,
+			);
+			name = AXXModule;
+			sourceTree = "<group>";
+		};
+		8C1B5B641F38914F00EFDC6A /* BXXModule */ = {
+			isa = PBXGroup;
+			children = (
+				8C1B5B681F38929200EFDC6A /* WTBXXModule.h */,
+				8C1B5B691F38929200EFDC6A /* WTBXXModule.m */,
+				8C1B5B6D1F38A15600EFDC6A /* WTBXXViewController.h */,
+				8C1B5B6E1F38A15600EFDC6A /* WTBXXViewController.m */,
+			);
+			name = BXXModule;
 			sourceTree = "<group>";
 		};
 		D753CED7222E24A1999365C3 /* Pods */ = {
@@ -250,6 +281,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "lbrsilva-allin";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = BMP99N9345;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -403,9 +437,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* WTAppDelegate.m in Sources */,
+				6003F59E195388D20070C39A /* WTTestAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* WTViewController.m in Sources */,
+				8C1B5B671F38916700EFDC6A /* WTAXXModule.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				8C1B5B6F1F38A15600EFDC6A /* WTBXXViewController.m in Sources */,
+				8C1B5B6A1F38929200EFDC6A /* WTBXXModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +570,7 @@
 			baseConfigurationReference = 97496A92C1CE95E19DE85623 /* Pods-WTModule_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BMP99N9345;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WTModule/WTModule-Prefix.pch";
 				INFOPLIST_FILE = "WTModule/WTModule-Info.plist";
@@ -548,6 +586,7 @@
 			baseConfigurationReference = 477032ABC3CF8350BB3AC542 /* Pods-WTModule_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BMP99N9345;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WTModule/WTModule-Prefix.pch";
 				INFOPLIST_FILE = "WTModule/WTModule-Info.plist";

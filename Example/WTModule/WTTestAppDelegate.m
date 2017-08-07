@@ -6,13 +6,23 @@
 //  Copyright (c) 2017 lbrsilva-allin. All rights reserved.
 //
 
-#import "WTAppDelegate.h"
+#import "WTTestAppDelegate.h"
+#import "WTViewController.h"
 
-@implementation WTAppDelegate
+@implementation WTTestAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [super application:application didFinishLaunchingWithOptions:launchOptions];
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UIViewController *controllerA = [[WTViewController alloc]init];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controllerA];
+//    [[XYPageNavigator instance] setRootNavigationController:nav];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

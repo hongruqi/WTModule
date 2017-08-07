@@ -7,6 +7,7 @@
 //
 
 #import "WTViewController.h"
+#import "WTBXXViewController.h"
 
 @interface WTViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    WTBXXViewController  *VC = [[WTBXXViewController alloc] init];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
