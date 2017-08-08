@@ -9,6 +9,7 @@
 #import "WTModuleLifecycle+AppDelegate.h"
 
 @implementation WTModuleLifecycle (AppDelegate)
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(nullable NSDictionary *)launchOptions
 {
     SEL sel = _cmd;

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WTModule'
-  s.version          = '0.1.0'
+  s.version          = '0.9.0'
   s.summary          = 'A short description of WTModule.'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lbrsilva-allin/WTModule'
+  s.homepage         = 'https://github.com/hongruqi'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lbrsilva-allin' => 'hongru.qi@quvideo.com' }
-  s.source           = { :git => 'https://github.com/lbrsilva-allin/WTModule.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/hongruqi/WTModule.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
