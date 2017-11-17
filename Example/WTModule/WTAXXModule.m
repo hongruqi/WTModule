@@ -8,6 +8,7 @@
 
 #import "WTAXXModule.h"
 #import "WTModuleLifecycle.h"
+#import "WTEventBus.h"
 
 @implementation WTAXXModule
 + (void)load
@@ -28,8 +29,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
+    [[WTEventBus defaultBus] registerExecuter:self action:@"userLogin:" topic:@"loginSuccessed"];
     return YES;
+}
+
+- (void)userLogin:(WTEventContext *)context
+{
+    
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

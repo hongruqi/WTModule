@@ -8,6 +8,8 @@
 
 #import "WTBXXViewController.h"
 #import "WTModule.h"
+#import "WTEventBus.h"
+#import "WTEventItem.h"
 
 @interface WTBXXViewController ()
 
@@ -24,6 +26,9 @@
         NSLog(@"I am a block");
         
         NSLog(@"aa");
+        WTEventItem *item = [[WTEventItem alloc] initWithTopic:@"loginSuccessed"];
+        [item setParam:@"userName" forKey:@"userName"];
+        [[WTEventBus defaultBus] postEvent:item];
     }];
     if (flag) {
         NSLog(@"flag = %d", flag);

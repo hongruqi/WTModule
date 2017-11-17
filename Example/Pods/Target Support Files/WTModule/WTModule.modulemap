@@ -1,0 +1,6 @@
+framework module WTModule {
+  umbrella header "WTModule-umbrella.h"
+
+  export *
+  module * { export * }
+}
