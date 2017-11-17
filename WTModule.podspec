@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'WTModule'
-  s.version          = '0.9.0'
-  s.summary          = 'A short description of WTModule.'
+  s.version          = '1.0.0'
+  s.summary          = 'WTModule 模块间通信'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
