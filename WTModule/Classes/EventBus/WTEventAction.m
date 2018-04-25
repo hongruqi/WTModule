@@ -33,15 +33,24 @@
             [holder addObject:context.target];
         }
         
-        __weak typeof(self) wself = self;
-        dispatch_async(self.executeQueue, ^{
-            __strong typeof(wself) sself = wself;
+        //线程 问题
+        if([NSThread isMainThread]) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-            [sself.target performSelector:sself.selector withObject:context];
+            [self.target performSelector:self.selector withObject:context];
 #pragma clang diagnostic pop
-        });
+        }else {
+            __weak typeof(self) wself = self;
+            dispatch_sync(self.executeQueue, ^{
+                __strong typeof(wself) sself = wself;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+                [sself.target performSelector:sself.selector withObject:context];
+#pragma clang diagnostic pop
+            });
+        }
     }
+    
 }
 
 @end
