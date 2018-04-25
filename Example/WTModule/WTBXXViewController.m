@@ -28,7 +28,10 @@
         NSLog(@"aa");
         WTEventItem *item = [[WTEventItem alloc] initWithTopic:@"loginSuccessed"];
         [item setParam:@"userName" forKey:@"userName"];
-        [[WTEventBus defaultBus] postEvent:item];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            [[WTEventBus defaultBus] postEvent:item];
+        });
+
     }];
     if (flag) {
         NSLog(@"flag = %d", flag);

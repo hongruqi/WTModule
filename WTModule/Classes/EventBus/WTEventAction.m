@@ -40,6 +40,7 @@
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
             [sself.target performSelector:sself.selector withObject:context];
 #pragma clang diagnostic pop
+            [holder removeAllObjects];
         });
     }
 }
